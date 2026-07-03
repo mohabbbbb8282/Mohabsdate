@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Date ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<!-- الصفحة الأولى -->
+<div id="welcome" class="page active">
+
+<h1>💬 Hey ❤️</h1>
+
+<p id="typing">
+I have something to ask you...
+</p>
+
+<button onclick="openChat()">
+Open Chat 💌
+</button>
+
+</div>
+
+<!-- السؤال -->
+<div id="question" class="page">
+
+<h1>
+Will You Go On A Date With Me? ❤️
+</h1>
+
+<div class="buttons">
+
+<button class="yes" onclick="showBooking()">
+YES 💖
+</button>
+
+<button class="no" id="noBtn">
+NO 😢
+</button>
+
+</div>
+
+</div>
+
+<!-- الحجز -->
+
+<div id="booking" class="page">
+
+<h1>Choose Our Date ❤️</h1>
+
+<input
+type="date"
+id="date">
+
+<input
+type="time"
+id="time">
+
+<select id="place">
+
+<option>Coffee ☕</option>
+
+<option>Dinner 🍽️</option>
+
+<option>Cinema 🎬</option>
+
+<option>Park 🌳</option>
+
+</select>
+
+<textarea
+id="note"
+placeholder="Write a message ❤️"></textarea>
+
+<button onclick="sendDate()">
+Confirm ❤️
+</button>
+
+</div>
+
+<!-- النهاية -->
+
+<div id="done" class="page">
+
+<h1>🎉 Yay ❤️</h1>
+
+<p>Your Date Is Confirmed 🥹</p>
+
+<div id="countdown"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
